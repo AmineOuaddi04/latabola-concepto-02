@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="La Tabola Gastrobar en Logroño: tortillas, bocadillos y platos para compartir. Cocina con oficio y ganas de sorprender en Av. de la Sierra, 19.">
+  <title>La Tabola — La mesa está puesta</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"La Tabola Gastrobar","address":{"@type":"PostalAddress","streetAddress":"Av. de la Sierra, 19, Bajo","addressLocality":"Logroño","postalCode":"26007","addressRegion":"La Rioja","addressCountry":"ES"},"telephone":"+34941483470","email":"info@latabola.es","servesCuisine":"Cocina española","url":"https://latabola.es/"}</script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="La Tabola, inicio"><span class="brand-symbol" aria-hidden="true">✳</span><span>LA TABOLA</span></a>
+    <nav aria-label="Principal">
+      <a href="#carta">CARTA</a>
+      <a class="nav-story" href="#nosotros">EL BAR</a>
+      <a href="#visitanos">DÓNDE</a>
+    </nav>
+    <a class="header-call" href="tel:+34941483470">LLÁMANOS <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-photo" src="./assets/mesa-viva.webp" alt="Personas compartiendo tapas y vino alrededor de una mesa" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-upper"><span>COCINA, VINO Y CONVERSACIÓN</span><span>LOGROÑO / LA RIOJA</span></div>
+      <div class="hero-center">
+        <span class="hero-overline">ESTÁS EN</span>
+        <h1 id="hero-title"><span>LA</span><strong>TABOLA</strong></h1>
+        <p>UN GASTROBAR PARA VENIR CON HAMBRE<br>Y QUEDARSE UN RATO MÁS.</p>
+      </div>
+      <a class="hero-disc" href="#carta" aria-label="Explorar la carta"><span>¿QUÉ<br>HAY EN LA<br>MESA?</span><b aria-hidden="true">↘</b></a>
+      <div class="hero-lower"><span>AV. DE LA SIERRA, 19 · LOGROÑO</span><span>BAJA PARA ABRIR EL APETITO ↓</span></div>
+    </section>
+
+    <div class="tape" aria-label="Cocina para compartir">
+      <div class="tape-inner" aria-hidden="true"><span>NO ES SOLO COMER <i>✳</i> ES QUEDARSE A GUSTO <i>✳</i></span><span>NO ES SOLO COMER <i>✳</i> ES QUEDARSE A GUSTO <i>✳</i></span></div>
+    </div>
+
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <div class="manifesto-top"><span>UN BAR, MUCHAS GANAS</span><span>01 / LA IDEA</span></div>
+      <div class="manifesto-body">
+        <h2 id="manifesto-title">Vienes por la <em>tortilla.</em><br>Te quedas por <span>todo lo demás.</span></h2>
+        <div class="manifesto-note"><span class="note-spark" aria-hidden="true">✳</span><p>Recetas que conoces. Sabores que no esperabas. Y la mesa como mejor punto de encuentro.</p></div>
+      </div>
+    </section>
+
+    <section class="menu-zone" id="carta" aria-labelledby="menu-title">
+      <div class="menu-header"><p>LA CARTA / A TU MANERA</p><h2 id="menu-title">ELIGE.<br>MEZCLA.<br><span>COMPARTE.</span></h2><a class="menu-official" href="https://latabolasierra.revosolo.works/an-store/digital-menu" target="_blank" rel="noopener noreferrer">CARTA COMPLETA <span aria-hidden="true">↗</span></a></div>
+      <div class="menu-board">
+        <div class="tabs" role="tablist" aria-label="Categorías de la carta">
+          <button class="tab active" id="tab-tortillas" role="tab" aria-controls="menu-panel" aria-selected="true" tabindex="0" data-category="tortillas"><span>01</span>TORTILLAS<b aria-hidden="true">↗</b></button>
+          <button class="tab" id="tab-bocadillos" role="tab" aria-controls="menu-panel" aria-selected="false" tabindex="-1" data-category="bocadillos"><span>02</span>BOCADILLOS<b aria-hidden="true">↗</b></button>
+          <button class="tab" id="tab-compartir" role="tab" aria-controls="menu-panel" aria-selected="false" tabindex="-1" data-category="compartir"><span>03</span>AL CENTRO<b aria-hidden="true">↗</b></button>
+          <button class="tab" id="tab-postres" role="tab" aria-controls="menu-panel" aria-selected="false" tabindex="-1" data-category="postres"><span>04</span>POSTRES<b aria-hidden="true">↗</b></button>
+        </div>
+        <div class="menu-content" id="menu-panel" role="tabpanel" aria-labelledby="tab-tortillas" tabindex="0">
+          <div class="menu-content-head"><span>EN LA MESA AHORA</span><span id="category-index">01 / 04</span></div>
+          <h3 id="category-title">Tortillas</h3>
+          <p id="category-intro">Una de las razones para volver. Clásicas o con una vuelta de tuerca.</p>
+          <ul id="dish-list">
+            <li><span>LA CLÁSICA</span><small>La de siempre, como tiene que ser.</small></li>
+            <li><span>LA TRUFADA</span><small>Una favorita de la casa.</small></li>
+            <li><span>LA DE BACALAO</span><small>Otra manera de empezar.</small></li>
+          </ul>
+          <a class="menu-link" href="https://latabolasierra.revosolo.works/an-store/digital-menu" target="_blank" rel="noopener noreferrer">VER TODA LA CARTA DIGITAL <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="menu-photo"><img src="./assets/tortilla-roja.webp" alt="Tortilla de patatas y croquetas sobre una mesa roja" loading="lazy"><div class="photo-sticker"><span>BUENO PARA<br>COMPARTIR</span><b>✳</b></div></div>
+      </div>
+      <div class="menu-bottom"><span>UNA COSA LLEVA A LA OTRA.</span><span>Y ESO NOS GUSTA.</span></div>
+    </section>
+
+    <section class="story" id="nosotros" aria-labelledby="story-title"><div class="story-side">DESDE LA RIOJA, CON OFICIO</div><div class="story-number" aria-hidden="true">40<span>+</span></div><div class="story-content"><span class="story-kicker">MÁS DE CUATRO DÉCADAS DE EXPERIENCIA</span><h2 id="story-title">Lo de siempre.<br><em>Con algo nuevo.</em></h2><p>La Tabola reúne más de 40 años de experiencia en la hostelería riojana. Su cocina parte de lo clásico, mira a otros sabores del mundo y vuelve siempre a lo importante: un buen producto y una mesa bien atendida.</p><a href="https://latabola.es/" target="_blank" rel="noopener noreferrer">CONOCE LA TABOLA <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="visit" id="visitanos" aria-labelledby="visit-title"><div class="visit-top"><span>TE GUARDAMOS UN SITIO</span><span>02 / EL ENCUENTRO</span></div><h2 id="visit-title">LA MESA<br>ESTÁ <em>PUESTA.</em></h2><div class="visit-bottom"><div class="address"><span>ENCUÉNTRANOS</span><p>Av. de la Sierra, 19, Bajo<br>26007 Logroño, La Rioja</p><a href="https://www.google.com/maps/search/?api=1&query=La+Tabola+Gastrobar+Av.+de+la+Sierra+19+Logro%C3%B1o" target="_blank" rel="noopener noreferrer">CÓMO LLEGAR <span aria-hidden="true">↗</span></a></div><div class="contact"><span>HABLEMOS</span><p><a href="tel:+34941483470">941 48 34 70</a><br><a href="mailto:info@latabola.es">info@latabola.es</a></p><a href="https://www.instagram.com/latabolagastrobar/" target="_blank" rel="noopener noreferrer">INSTAGRAM <span aria-hidden="true">↗</span></a></div><a class="visit-round" href="tel:+34941483470" aria-label="Llamar a La Tabola">LLÁMANOS <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><span>LA TABOLA ✳ GASTROBAR</span><span>LOGROÑO · LA RIOJA</span><span>© <span id="year">2026</span></span></footer>
+</body>
+</html>
